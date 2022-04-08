@@ -14,8 +14,12 @@ public class HelloGradleController {
     @Value("string value")
     private String stringValue;
 
+    // get Value got from the file assigned to the field
+    @Value("${value.from.file}")
+    private String valueFromFile;
+
     @GetMapping
     public String helloGradle() {
-        return this.helloService.getHelloMessage(stringValue);
+        return this.helloService.getHelloMessage(valueFromFile);
     }
 }
