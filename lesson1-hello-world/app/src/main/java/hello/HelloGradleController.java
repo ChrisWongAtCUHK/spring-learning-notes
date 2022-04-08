@@ -24,8 +24,12 @@ public class HelloGradleController {
     @Value("${systemValue:default value}")
     private String systemValue;
 
+    // a bunch of values
+    @Value("${listOfValues}")
+    private String[] valuesArray;
+
     @GetMapping
     public String helloGradle() {
-        return this.helloService.getHelloMessage(systemValue);
+        return this.helloService.getHelloMessage(String.join("", valuesArray));
     }
 }
