@@ -9,3 +9,4 @@
 4. A Quick Guide to Spring @Value
     * [Usage Examples](https://www.baeldung.com/spring-value-annotation#usage-examples)
 5. [How to pass system property to Gradle task](https://stackoverflow.com/questions/23367507/how-to-pass-system-property-to-gradle-task/52947375#52947375)
+6. [Launch](https://code.visualstudio.com/docs/java/java-debugging#_launch)
