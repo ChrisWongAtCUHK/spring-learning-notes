@@ -18,11 +18,10 @@ public class HelloGradleController {
     @Value("${value.from.file}")
     private String valueFromFile;
 
-    // this would cause compilation failure
     // run 
     //      ./gradlew bootRun --args='--systemValue=arguments'
-    // to define the system property
-    @Value("${systemValue}")
+    // or the value would be "defaule value"
+    @Value("${systemValue:default value}")
     private String systemValue;
 
     @GetMapping
